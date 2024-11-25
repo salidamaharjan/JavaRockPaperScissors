@@ -18,8 +18,10 @@ public class PlayRockPaperScissors {
             compChoice = choices[randomNum];
             System.out.print("Computer's Choice: " + compChoice);
         }
-        if(userChoice.equals("ROCK") && compChoice.equals("SCISSORS")){
-            System.out.println("You Win!!");
+        if((userChoice.equals("ROCK") && compChoice.equals("SCISSORS")) || (userChoice.equals("PAPER") && compChoice.equals("ROCK")) || (userChoice.equals("SCISSORS") && compChoice.equals("PAPER"))){
+            System.out.println("YOU 🏆WIN!!");
+        } else {
+            System.out.println("YOU 🥶LOSE!!");
         }
     }
 
