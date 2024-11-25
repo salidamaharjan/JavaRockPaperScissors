@@ -1,15 +1,16 @@
 import java.util.Scanner;
 public class PlayRockPaperScissors {
-    public static int checkStatus() {
+    public static void randomStatus(String userInput) {
         String[] RPS = {"ROCK", "PAPER", "SCISSORS"};
-        int randomRPS = (int) Math.floor(Math.random() * 3);
-        return randomRPS;
+        int randomNum = (int) Math.floor(Math.random() * 3);
+        String RPSStatus = RPS[randomNum];
+        System.out.print("Computer's Choice: " + RPSStatus);
     }
 
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         System.out.print("Enter Rock or Paper or Scissors: ");
-        String status = scnr.next();
-        System.out.println(checkStatus());
+        String userInput = scnr.next().toUpperCase();
+        randomStatus(userInput);
     }
 }
