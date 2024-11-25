@@ -41,7 +41,7 @@ public class PlayRockPaperScissors {
         checkStatus();
         System.out.print("Type YES to play and NO to exit: ");
         String playAgain = scnr.next().toUpperCase();
-        if(!playAgain.equals("YES") && !playAgain.equals("NO")){
+        if (!playAgain.equals("YES") && !playAgain.equals("NO")) {
             System.out.print("Please type YES to play and NO to exit: ");
             playAgain = scnr.next().toUpperCase();
         }
@@ -49,11 +49,10 @@ public class PlayRockPaperScissors {
             checkStatus();
             System.out.print("Type YES to play and NO to exit: ");
             playAgain = scnr.next().toUpperCase();
-            if(!playAgain.equals("YES") && !playAgain.equals("NO")){
+            if (!playAgain.equals("YES") && !playAgain.equals("NO")) {
                 System.out.print("Please type YES to play and NO to exit: ");
                 playAgain = scnr.next().toUpperCase();
             }
         }
-
     }
 }
